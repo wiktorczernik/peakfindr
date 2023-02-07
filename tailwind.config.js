@@ -20,6 +20,12 @@ module.exports = {
         '160': '40rem', //'640px'
         '176': '44rem', //'704px'
         '192': '48rem', //'768px'
+      },
+      backgroundImage: {
+        'paramax-mountain': "url('/assets/img/background.jpg')",
+      },
+      backdropBlur: {
+        'smx': '2px',
       }
     }
   }

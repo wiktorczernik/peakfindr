@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./dist/output.css">
     <link rel="stylesheet" href="./assets/css/generic.css">
 </head>
-<body>
-    <header class="relative w-full h-24 bg-slate-800/[.5] md:h-20">
+<body class="bg-paramax-mountain bg-no-repeat bg-fixed">
+    <header class="relative w-full h-24 bg-slate-800/[.5] backdrop-blur-md md:h-20">
         <nav class="h-full mx-4">
             <div id="row" class="flex flex-col h-full items-center justify-between md:flex-row">
                 <div class="left">
@@ -31,16 +31,44 @@
         <div id="container" class="px-2 py-2">
             <div id="row" class="flex flex-col h-full items-center">
                 <h3 class="text-2xl font-semibold">What is Peakguesser?</h3>
-                <div class="photo">
-
+                <div class="image-slider mb-1 py-2 px-2 overflow-hidden">
+                    <img src="./assets/img/" alt="mountain photo">
+                    <div class="point-event flex items-center justify-center my-2">
+                        <div class="photo-1 w-4 h-4 mr-1 rounded-full ring-1 ring-offset-1 bg-gradient-to-br from-sky-400 to-sky-500 ring-gray-200 ring-offset-gray-100/[.6] shadow-inner"></div>
+                        <div class="photo-2 w-4 h-4 mx-1 rounded-full ring-1 ring-offset-1 ring-gray-200 ring-offset-gray-100/[.6] shadow-inner"></div>
+                        <div class="photo-3 w-4 h-4 ml-1 rounded-full ring-1 ring-offset-1 ring-gray-200 ring-offset-gray-100/[.6] shadow-inner"></div>
+                    </div>
                 </div>
-                <div class="text">
+                <div class="text w-3/4 px-2 border-l-2 border-cyan-300 rounded backdrop-blur-smx">
                     <p class="text-lg">Peakguesser is mountain site, which offer information about highest mountains, where are they and more! </p>
+                    <p class="text-lg">Our squad tried to put all information about mountains, trivia, found graphics to site was complete.</p>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="relative w-full h-14 bg-slate-700/[.5]">
+    <section class="relative w-full h-auto bg-slate-600">
+        <div id="container">
+
+        </div>
+        <div id="container" class="bg-slate-400">
+            <div class="form p-4">
+                <h3 class="text-3xl font-semibold text-center mb-4">Contact Us</h3>
+                <form action="#" class="mail">
+                    <input type="email" name="email">
+                    <select name="reason">
+                        <option value="...">...</option>
+                        <option value="Question">Question</option>
+                        <option value="Bugs & Problems">Bugs & Problems</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <input type="text" name="title">
+                    <input type="text" name="textarea">
+                </form>
+                <button type="button">Button</button>
+            </div>
+        </div>
+    </section>
+    <footer class="relative w-full h-14 bg-slate-700">
         <div id="container" class="h-full py-2">
             <div id="row" class="flex min-h-full items-center justify-center">
                 <div class="footer flex">
