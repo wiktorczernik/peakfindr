@@ -33,7 +33,7 @@ module.exports = {
         'midnight-900': '#151354',
       },
       backgroundImage: {
-        'paramax-mountain': "url('assets/img/rysy.jpg')",
+        'paramax-mountain': "url('peakguesser/assets/img/rysy.jpg')",
       },
       backdropBlur: {
         'smx': '2px',
