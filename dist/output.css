@@ -685,6 +685,14 @@ video {
   border-radius: 0.125rem;
 }
 
+.rounded-tl-xl {
+  border-top-left-radius: 0.75rem;
+}
+
+.rounded-tr-xl {
+  border-top-right-radius: 0.75rem;
+}
+
 .border-2 {
   border-width: 2px;
 }
@@ -744,8 +752,18 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
+.from-midnight-700\/\[\.3\] {
+  --tw-gradient-from: rgb(41 38 145 / .3);
+  --tw-gradient-to: rgb(41 38 145 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .to-sky-500 {
   --tw-gradient-to: #0ea5e9;
+}
+
+.to-midnight-900\/\[\.2\] {
+  --tw-gradient-to: rgb(21 19 84 / .2);
 }
 
 .bg-fixed {
