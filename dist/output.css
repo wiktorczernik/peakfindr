@@ -746,6 +746,10 @@ video {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
+
 .from-sky-400 {
   --tw-gradient-from: #38bdf8;
   --tw-gradient-to: rgb(56 189 248 / 0);
