@@ -21,8 +21,19 @@ module.exports = {
         '176': '44rem', //'704px'
         '192': '48rem', //'768px'
       },
+      backgroundColor: {
+        'midnight-100': '#bebce6',
+        'midnight-200': '#9391e6',
+        'midnight-300': '#6965e0',
+        'midnight-400': '#4e49e3',
+        'midnight-500': '#3934c9',
+        'midnight-600': '#3834ad',
+        'midnight-700': '#292691',
+        'midnight-800': '#211f6e',
+        'midnight-900': '#151354',
+      },
       backgroundImage: {
-        'paramax-mountain': "url('/assets/img/background.jpg')",
+        'paramax-mountain': "url('/assets/img/rysy.jpg')",
       },
       backdropBlur: {
         'smx': '2px',
