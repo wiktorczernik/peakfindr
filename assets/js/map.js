@@ -30,6 +30,14 @@ const peakIcon = L.icon({
     shadowSize: [34, 34],
     shadowAnchor: [17, 17]
 });
+const youIcon = L.icon({
+    iconUrl: '../assets/img/map/you-icon.png',
+    iconSize: [32, 32],
+    iconAnchor: [16, 16],
+    shadowUrl: '../assets/img/map/you-icon-shadow.png',
+    shadowSize: [34, 34],
+    shadowAnchor: [17, 17]
+});
 const peaksData = [
     {
         name: "Gunnbjorn Fjeld",
@@ -267,6 +275,7 @@ function initmap(){
         accessToken: api
     }).addTo(peakMap);
 
+    viewToGeo();
     createMarkers();
 }
 function createMarkers(){
@@ -283,6 +292,21 @@ function createMarkers(){
         marker.bindPopup('<h1>' + name + '</h1><p>Elevation: ' + elevation + '<br>Location: ' + location + '<br>Range: ' + range + '<br>First ascent: ' + ascent + '</p><img src="' + imagesPath + image + '" width="200px">');
         marker.on('click', markerClick);
         marker.addTo(peakMap);
+    });
+}
+function viewToGeo(){
+    navigator.geolocation.getCurrentPosition((e) => 
+    {
+        let crds = e.coords;
+        let latLng = L.latLng(crds.latitude, crds.longitude)
+        peakMap.setView(latLng)
+        let youMarker = L.marker(latLng, {
+            icon: youIcon
+        });
+        youMarker.addTo(peakMap);
+    }, (e) => 
+    {
+        peakMap.setView([0, 0])
     });
 }
 function markerClick(e){
