@@ -306,7 +306,7 @@ function viewToGeo(){
         youMarker.addTo(peakMap);
     }, (e) => 
     {
-        peakMap.setView([0, 0])
+        console.log("Czemu :-C");
     });
 }
 function markerClick(e){
