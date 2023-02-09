@@ -744,7 +744,8 @@ video {
 }
 
 .bg-paramax-mountain {
-  background-image: url('/peakguesser/assets/img/rysy.jpg');
+  background-image: url('../assets/img/rysy.jpg');
+  background-color: #071436;
 }
 
 .bg-gradient-to-br {
