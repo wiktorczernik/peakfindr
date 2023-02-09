@@ -17,6 +17,7 @@ const attributionControl = false;
 const zoomAnimation = false;
 const markerZoomAnimation = false;
 const fadeAnimation = false;
+const zoomControl = false;
 
 
 var peakMap;
@@ -255,7 +256,8 @@ function initmap(){
         attributionControl: attributionControl,
         zoomAnimation: zoomAnimation,
         markerZoomAnimation : markerZoomAnimation,
-        fadeAnimation: fadeAnimation
+        fadeAnimation: fadeAnimation,
+        zoomControl: zoomControl
     });
 
     L.tileLayer(mapSource, {
