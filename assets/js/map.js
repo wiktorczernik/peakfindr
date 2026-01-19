@@ -21,20 +21,20 @@ const zoomControl = false;
 
 var peakMap;
 const peakIcon = L.icon({
-    iconUrl: '/assets/img/map/peak-icon.png',
+    iconUrl: '../assets/img/map/peak-icon.png',
     iconSize: [32, 32],
     iconAnchor: [16, 16],
     popupAnchor: [0, -12],
-    shadowUrl: '/assets/img/map/peak-icon-shadow.png',
+    shadowUrl: '../assets/img/map/peak-icon-shadow.png',
     shadowSize: [34, 34],
     shadowAnchor: [17, 17]
 });
 
 const youIcon = L.icon({
-    iconUrl: '/assets/img/map/you-icon.png',
+    iconUrl: '../assets/img/map/you-icon.png',
     iconSize: [32, 32],
     iconAnchor: [16, 16],
-    shadowUrl: '/assets/img/map/you-icon-shadow.png',
+    shadowUrl: '../assets/img/map/you-icon-shadow.png',
     shadowSize: [34, 34],
     shadowAnchor: [17, 17]
 });
@@ -46,7 +46,7 @@ window.onload = (ev) => initmap();
 
 async function initmap(){
 
-    peaksData = await (await fetch("/assets/definitions/peaks.json")).json();
+    peaksData = await (await fetch("../assets/definitions/peaks.json")).json();
 
     L.Browser.any3d = false;
     peakMap = L.map("map", {
